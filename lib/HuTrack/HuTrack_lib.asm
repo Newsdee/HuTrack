@@ -557,3 +557,9 @@ HuTrackEngine.playSong:
   rts
 
 
+
+  .ifdef HUCC
+  .bank CORE_BANK
+  .else
+  .bank LIB1_BANK
+  .endif
