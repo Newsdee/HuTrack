@@ -1,6 +1,8 @@
+#ifndef HUCC
+	#include "huc.h"
+#endif
 
 #include "HuVGM_defs.h"
-#include "huc.h"
 #include "HuTrack/Huc_interface/HuTrack.c"
 #include "HuSFX/Huc_interface/HuSFX.c"
 
@@ -115,8 +117,9 @@ SFXassign sFXassign[6];
 
 void __fastcall getFarPointer( char far *obj<__fbank:__fptr>, unsigned int bank_p<__ax>, unsigned int addr_p<__bx> );
 
+/*
 void __fastcall __macro getFarPointer2( char far *obj<__fbank:__fptr>, unsigned int bank_p<__ax>, unsigned int addr_p<__bx> );
-
+*/
 
 //###############################################################################
 //###############################################################################
@@ -274,7 +277,9 @@ void loadPcmPointers() {
     pcmPointers.idx = 0;
     getFarPointer(pcm1, &(pcmPointers.bank[pcmPointers.idx]), &(pcmPointers.addr[pcmPointers.idx]) );
 
-    getFarPointer2(pcm1, &(pcmPointers.bank[pcmPointers.idx]), &(pcmPointers.addr[pcmPointers.idx]) );
+    //getFarPointer2(pcm1, &(pcmPointers.bank[pcmPointers.idx]), &(pcmPointers.addr[pcmPointers.idx]) );
+	getFarPointer(pcm1, &(pcmPointers.bank[pcmPointers.idx]), &(pcmPointers.addr[pcmPointers.idx]) );
+
 
     pcmPointers.mask0[pcmPointers.idx  ] = PCM_NO_FORCE;
     pcmPointers.mask1[pcmPointers.idx++] = PCM_DISABLE_REPEAT;
