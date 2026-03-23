@@ -1,4 +1,4 @@
-// GunhedSound.c — Gunhed sound test recreation for PC Engine / HuCC
+// PCM / DAA sound test for PC Engine / HuCC
 //
 //   - DDA/PCM voice samples:    HuTrack 7kHz timer-driven ISR
 //
@@ -28,14 +28,14 @@
 // ---------------------------------------------------------------------------
 // DDA PCM voice samples
 // ---------------------------------------------------------------------------
-#incasmlabel(sound_1, "../assets/pcm/emergency.inc", 1)
-#incasmlabel(sound_2, "../assets/pcm/emergency.inc", 1)
-#incasmlabel(sound_3, "../assets/pcm/emergency.inc", 1)
-#incasmlabel(sound_4, "../assets/pcm/emergency.inc", 1)
-#incasmlabel(sound_5, "../assets/pcm/emergency.inc", 1)
-#incasmlabel(sound_6, "../assets/pcm/emergency.inc", 1)
-#incasmlabel(sound_7, "../assets/pcm/emergency.inc", 1)
-#incasmlabel(sound_8, "../assets/pcm/emergency.inc", 1)
+#incasmlabel(sound_1, "../assets/pcm/emergency.inc", 2)
+#incasmlabel(sound_2, "../assets/pcm/emergency.inc", 2)
+#incasmlabel(sound_3, "../assets/pcm/emergency.inc", 2)
+#incasmlabel(sound_4, "../assets/pcm/emergency.inc", 2)
+#incasmlabel(sound_5, "../assets/pcm/emergency.inc", 2)
+#incasmlabel(sound_6, "../assets/pcm/emergency.inc", 2)
+#incasmlabel(sound_7, "../assets/pcm/emergency.inc", 2)
+#incasmlabel(sound_8, "../assets/pcm/emergency.inc", 2)
 
 // ---------------------------------------------------------------------------
 // Bank/address lookup tables
