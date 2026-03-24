@@ -22,18 +22,18 @@
 // Sound definitions
 // ---------------------------------------------------------------------------
 #define SOUND_FIRST   1
-#define SOUND_COUNT    1
+#define SOUND_COUNT    6
 #define CH_DDA    5   /* HuTrack DDA voice channel */
 
 // ---------------------------------------------------------------------------
 // DDA PCM voice samples
 // ---------------------------------------------------------------------------
 #incasmlabel(sound_1, "../assets/pcm/emergency.inc", 2)
-#incasmlabel(sound_2, "../assets/pcm/emergency.inc", 2)
-#incasmlabel(sound_3, "../assets/pcm/emergency.inc", 2)
-#incasmlabel(sound_4, "../assets/pcm/emergency.inc", 2)
-#incasmlabel(sound_5, "../assets/pcm/emergency.inc", 2)
-#incasmlabel(sound_6, "../assets/pcm/emergency.inc", 2)
+#incasmlabel(sound_2, "../assets/pcm/explosion2.inc", 2)
+#incasmlabel(sound_3, "../assets/pcm/hypercocoon.inc", 2)
+#incasmlabel(sound_4, "../assets/pcm/lightning.inc", 2)
+#incasmlabel(sound_5, "../assets/pcm/stageclear.inc", 2)
+#incasmlabel(sound_6, "../assets/pcm/ShubibinmanIIIb.inc", 2)
 #incasmlabel(sound_7, "../assets/pcm/emergency.inc", 2)
 #incasmlabel(sound_8, "../assets/pcm/emergency.inc", 2)
 
